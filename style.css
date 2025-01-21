@@ -1,0 +1,138 @@
+:root{
+
+    /* colors */
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+
+    /* images/icons */
+    --SuccessIcon: url(./assets/images/icon-success.svg);
+    --newsletterDesktopImg: url(./assets/images/illustration-sign-up-desktop.svg);
+
+}
+
+@font-face {
+    font-family: "Robota Regular";
+    src: url(./assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Robota Bold";
+    src: url(./assets/fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+body{
+    font-family: "Robota Regular";
+    background-color: var(--Charcoal-Grey);
+}
+
+
+form{
+    background-color: var(--White);
+    border-radius: 2.1rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 56rem;
+    height: 38rem;
+    margin: 10rem auto;
+}
+
+ul{
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    line-height: 2rem;
+    /*list-style-image: var(--SuccessIcon);*/
+}
+
+
+li::before{
+
+    content: '';
+    display: inline-block;
+    transform: translateY(20%);   /*  flytter ikonet opp(-)/ned(+)  */
+    background-image: url(./assets/images/icon-success.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: center;
+    margin: 0 15px 0 0;
+
+}
+
+.newsletterContent{
+    margin: 30px;
+}
+
+.newsletterContent h1{
+    font-family: 'Robota Bold', Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5rem;
+}
+
+.thankYouMessage h1{
+    font-family: 'Robota Bold', Arial, Helvetica, sans-serif;
+    font-size: 4.3rem;
+    line-height: 4.6rem;
+    margin: 2rem 0;
+}
+
+p{
+    line-height: 1.5rem;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+input{
+    padding: 1rem;
+    margin: 1rem 0;
+    width: calc(100% - 36px);   
+    border-radius: 0.5rem;
+    border: 1px solid var(--Grey);
+    font-size: 1.0rem;
+}
+
+input::placeholder{
+    color: var(--Grey);
+}
+
+button{
+    font-family: 'Robota Bold';
+    background-color: var(--Dark-Slate-Grey);
+    display: block;
+    width: 100%;
+    color: var(--White);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    height: 3.5rem;
+}
+
+.newsletterImage{
+    background-image: var(--newsletterDesktopImg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: right;
+    border-radius: 0.6rem;
+}
+
+.thankYouMessage{
+    background-color: var(--White);
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    border-radius: 2.1rem;
+    padding: 4.5rem;
+/*     display: flex;
+    text-align: flex-start;
+    justify-content:space-evenly; */
+
+}
