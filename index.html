@@ -18,7 +18,7 @@
 <body>
 
   <!-- Sign-up form start -->
-  <form action="#">
+  <form action="#" id="newsletterSignup">
 
     <section class="newsletterContent">
 
@@ -41,11 +41,11 @@
         <li>And much more!</li>
       </ul>
       
-      <label for="email">Email address</label>
+      <label for="subscribeEmail">Email address</label>
 
-      <input type="email" class="input-email" placeholder="email@company.com">
+      <input type="email" class="input-email" placeholder="email@company.com" id="subscribeEmail">
       
-      <button class="subscribeButton">Subscribe to monthly newsletter</button>
+      <button class="subscribeButton" type="submit">Subscribe to monthly newsletter</button>
 
     </section>
 
@@ -62,18 +62,18 @@
 
 
   <!-- Success message start -->
-  <section class="thankYouMessage">
+  <form class="thankYouMessage" id="thankYouMessage" action="#">
 
     <img src="./assets/images/icon-success.svg" alt="Success">
 
     <h1 class="thanksH1">Thanks for subscribing!</h1>
 
-    <p class="thanksP1">A confirmation email has been sent to <b>ash@loremcompany.com.</b> </p>
-    <p class="thanksP2">Please open it and click the button inside to confirm your subscription.</p>
+    <p class="thanksP1">A confirmation email has been sent to <b id="outSubscribeEmail">ash@loremcompany.com.</b>.
+    Please open it and click the button inside to confirm your subscription.</p>
 
-    <button class="dismissButton">Dismiss message</button>
+    <button class="dismissButton" type="submit">Dismiss message</button>
 
-  </section>
+  </form>
     <!-- Success message end -->
     
   <div class="attribution">
